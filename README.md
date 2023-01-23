@@ -13,7 +13,7 @@
 <h2 id="whatis">🤔 O que é?</h2> 
 <p>O habits é um website que te permite criar e monitorar os seus hábitos diários, de forma simples, te ajudando a criar bons hábitos ❤️</p>
 
-<a href="">
+<a target="_blank" href="https://cardtunic.github.io/habits/">
     <img src="https://i.imgur.com/kia1lfE.png"/>
 </a>
 
@@ -38,7 +38,7 @@
 
 <p>O layout do site foi criado usando o Figma, e foi inspirado no design oferecido pelos organizadores do NLW-Setup para o público.</p>
 
-<a href="https://www.figma.com/file/rK5jkJOJnE1ylZiOXWJua1/habits.?node-id=473%3A87&t=tkWdrfgm1dn4OLJT-1">
+<a target="_blank" href="https://www.figma.com/file/rK5jkJOJnE1ylZiOXWJua1/habits.?node-id=473%3A87&t=tkWdrfgm1dn4OLJT-1">
     <img src="https://img.shields.io/static/v1?label=Acesse o layout&message=FIGMA&color=f14e1e&style=for-the-badge&logo=<LOGO>"/>
 </a>
 
