@@ -37,7 +37,7 @@ function renderHabitInfoView() {
 async function renderHabitIconView() {
   if (newHabitFormIconsList.innerHTML === "") {
     const data = await fetch(
-      "https://raw.githubusercontent.com/cardtunic/habits/main/assets/icons/icons.json"
+      "https://raw.githubusercontent.com/cardtunic/habits/main/assets/repos/icons.json"
     );
     const availableIcons = await data.json();
 
