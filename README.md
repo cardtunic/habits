@@ -54,8 +54,8 @@ _<p>Esse site foi criado durante a NLW-Setup, em uma semana. A ideia e inspiraç
 
 <h2 id="goals">🎯 Metas</h2>
 
-- [ ] Refatorar partes do código
-- [ ] Adicionar a possibilidade de excluir hábitos
+- [x] Refatorar partes do código
+- [x] Adicionar a possibilidade de excluir hábitos
 - [ ] Separar histórico de hábitos por meses
 - [ ] Adicionar barra de pesquisa para ícones
 - [ ] Concertar incongruências no layout
