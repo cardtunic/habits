@@ -38,6 +38,18 @@ function addHabit(habit) {
   localStorage.setItem("userHabits", JSON.stringify(userHabits));
 }
 
+// função que remove um hábito do array de hábitos criados pelo usuário
+
+function removeHabit(habitId) {
+  const userHabits = getHabits();
+
+  // remove o hábito do armazenamento local do navegador
+
+  const filteredUserHabits = userHabits.filter((habit) => habit.id !== habitId);
+
+  localStorage.setItem("userHabits", JSON.stringify(filteredUserHabits));
+}
+
 // função que adiciona um novo dia em que um hábito foi feito
 
 function addCheckedDay(habitId, day) {

@@ -1,5 +1,16 @@
 // handlers: vão lidar com eventos do DOM
 
+// lida com cliques no ícone de deletar hábito
+
+function removeHabitHandler(element) {
+  const habitId = Number(
+    element.parentElement.parentElement.getAttribute("data-habit-id")
+  );
+
+  removeHabit(habitId);
+  renderLayout();
+}
+
 // lida com cliques em checkboxes dentro do calendário
 
 function addCheckedDayHandler(element, day) {
@@ -63,6 +74,12 @@ function renderHabits() {
 
           <div class="habit-details">
             <p>${habit.name}</p>
+            <span
+              class="material-symbols-outlined"
+              onclick=removeHabitHandler(this)
+            >
+              delete
+            </span>
           </div>
         </div>
         `

@@ -69,6 +69,20 @@
   white-space: nowrap;
 }
 
+#habits-form #habits .habit .habit-details span {
+  color: var(--orange);
+  font-size: 32px;
+
+  cursor: pointer;
+}
+
+#habits-form #habits .habit .habit-details span:hover {
+  opacity: 0.7;
+  transform: scale(0.9);
+
+  transition: all 100ms ease-in;
+}
+
 /* estilização do calendário de hábitos */
 
 #habits-form #calendar {
