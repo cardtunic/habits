@@ -36,7 +36,9 @@ function renderHabitInfoView() {
 
 async function renderHabitIconView() {
   if (newHabitFormIconsList.innerHTML === "") {
-    const data = await fetch("https://raw.githubusercontent.com/cardtunic/habits/main/assets/icons/icons.json");
+    const data = await fetch(
+      "https://raw.githubusercontent.com/cardtunic/habits/main/assets/icons/icons.json"
+    );
     const availableIcons = await data.json();
 
     const iconsElements = availableIcons.map((icon) => {
@@ -88,11 +90,12 @@ newHabitFormSubmitButton.addEventListener("click", async () => {
   const habitIcon = newHabitFormIconSelectorButton.innerText;
 
   try {
-    addNewHabit({ icon: habitIcon, name: habitName });
-    hideNewHabitForm();
+    addHabit({ icon: habitIcon, name: habitName });
 
+    renderLayout();
+    hideNewHabitForm();
   } catch (error) {
-    alert(error.message)
+    alert(error.message);
   }
 });
 

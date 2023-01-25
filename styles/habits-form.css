@@ -10,103 +10,108 @@
 
 #habits-form #habits {
   display: flex;
-  align-items: center;
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
-
   margin-top: 52px;
-
   color: var(--white);
+
+  width: 64px;
 }
 
-#habits-form #habits span {
-  font-size: 52px;
-  cursor: pointer;
-  transition: all 100ms ease-in;
-  height: 52px;
-}
-
-#habits-form #habits span:hover {
-  opacity: 0.7;
-  transform: scale(0.90);
-}
-
-.no-hover:hover {
-  opacity: 1 !important;
-  transform: scale(1) !important;
-}
-
-#habits-form #habits span .habit-info {
-  position: relative;
-  top: -60px;
-  left: -10px;
-  z-index: -1;
-
-  display: none;
+#habits-form #habits .habit {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 
+  z-index: 1;
+
+  height: 64px;
+}
+
+#habits-form #habits .habit .habit-icon {
+  width: 64px;
+  height: 64px;
+
+  text-align: center;
+  font-size: 64px;
+
+  cursor: pointer;
+
+  transition: all 100ms ease-in;
+}
+
+#habits-form #habits .habit .habit-icon:hover {
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+
+#habits-form #habits .habit .habit-icon-relative {
+  position: relative;
+  left: 18px;
+  z-index: 1;
+}
+
+#habits-form #habits .habit .habit-details {
+  position: relative;
+  left: -64px;
+  display: none;
+  align-items: center;
   gap: 15px;
-  
-  padding: 25px 25px 20px 70px;
-  
+  height: 80px;
+  padding: 0px 30px 0px 100px;
   font-size: 23px;
-  
-  background: var(--gray);
   border-radius: 40px;
+  background: var(--gray);
 }
 
-#habits-form #habits span .habit-info span {
-  color: var(--orange);
-  font-size: 34px;
-  z-index: 10;
+#habits-form #habits .habit .habit-details p {
+  white-space: nowrap;
 }
 
-/* estilização dos dias com as caixas de seleção */
+/* estilização do calendário de hábitos */
 
-#habits-form #days {
+#habits-form #calendar {
   display: flex;
   gap: 28px;
   overflow-x: overlay;
   padding-bottom: 50px;
 }
 
-#habits-form #days .day {
+#habits-form #calendar .day {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 28px;
 }
 
-#habits-form #days .day p {
+#habits-form #calendar .day p {
   color: var(--orange);
   font-family: "Roboto mono", sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
 
-#habits-form #days .day input {
-  width: 52px;
-  height: 52px;
-
+#habits-form #calendar .day input {
+  width: 64px;
+  height: 64px;
   appearance: none;
   cursor: pointer;
   border: 2.5px solid #ff7b31;
   background-color: transparent;
   border-radius: 50%;
-
   transition: all 75ms ease-in;
 }
 
-#habits-form #days .day input:checked {
+#habits-form #calendar .day input:checked {
   background-color: var(--orange);
 }
 
-#habits-form #days .day input:hover {
+#habits-form #calendar .day input:hover {
   opacity: 0.7;
 }
 
-#habits-form #days .day input:disabled {
+#habits-form #calendar .day input:disabled {
   opacity: 0.7;
   cursor: initial;
 }
