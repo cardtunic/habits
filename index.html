@@ -64,36 +64,39 @@
         alt="Logomarca da plataforma habits"
         class="logo"
       />
-      <p id="today">Oi, hoje é <span>--/--</span></p>
+      <p id="today" data-translate-key="today"><span>--/--</span></p>
     </header>
 
-    <button id="add-new-habit">
-      <img src="./assets/images/icons/plus.svg" alt="Ícone do sinal de adição" />
+    <button id="add-new-habit" data-translate-key="addHabit">
+      <img
+        src="./assets/images/icons/plus.svg"
+        alt="Ícone do sinal de adição"
+      />
     </button>
 
     <form id="new-habit-form">
       <div class="habit-info-view">
         <div class="habit-icon">
-          <label for="">Escolha um ícone</label>
+          <label for="" data-translate-key="chooseHabitIcon"></label>
           <button type="button" id="habit-icon-selector">
             <span class="material-symbols-outlined">library_add</span>
           </button>
         </div>
 
-        <div class="habit-name">
-          <label for="habit-name-input">Nome do hábito</label>
+        <div class="habit-name" data-translate-key="chooseHabitName">
+          <label for="habit-name-input"></label>
           <input
             type="text"
             name="habit-name-input"
             id="habit-name-input"
-            placeholder="caminhar 30 minutos"
+            placeholder=""
           />
         </div>
       </div>
 
       <div class="habit-icon-view">
         <div class="header">
-          <p>Escolha um ícone</p>
+          <p data-translate-key="chooseHabitIcon"></p>
           <!-- <input type="text" name="habit-name" placeholder="correndo" /> -->
         </div>
 
@@ -101,21 +104,27 @@
       </div>
 
       <div class="buttons">
-        <button type="button" class="submit-button">
+        <button
+          type="button"
+          class="submit-button"
+          data-translate-key="submitButton"
+        >
           <span class="material-symbols-outlined">check_circle</span>
         </button>
 
-        <button type="button" class="cancel-button">
+        <button
+          type="button"
+          class="cancel-button"
+          data-translate-key="cancelButton"
+        >
           <span class="material-symbols-outlined">cancel</span>
         </button>
       </div>
     </form>
 
-    <div id="welcome-message">
+    <div id="welcome-message" data-translate-key="welcome">
       <h1></h1>
-      <p>
-        Clique no botão criar hábito e comece a criar bons hábitos no seu 2023!
-      </p>
+      <p></p>
     </div>
 
     <form id="habits-form">
@@ -126,8 +135,11 @@
     <script src="./js/addNewHabitForm.js"></script>
     <script src="./js/addNewHabitButton.js"></script>
 
-    <script src="./js/habitsRepository.js"></script>
-    <script src="./js/habitsCalendar.js"></script>
-    <script src="./js/habitsDOM.js"></script>
+    <script src="./js/habitsForm/habitsRepository.js"></script>
+    <script src="./js/habitsForm/habitsCalendar.js"></script>
+    <script src="./js/habitsForm/habitsDOM.js"></script>
+
+    <script src="./js/multilingualSupport/multilingualSupportDOM.js"></script>
+    <script src="./js/multilingualSupport/multilingualSupportRepository.js"></script>
   </body>
 </html>
