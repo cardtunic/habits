@@ -48,7 +48,7 @@ body {
 }
 
 #welcome-message h1::after {
-  content: "Comece a criar novos hábitos agora mesmo :D";
+  /* content: "Comece a criar novos hábitos agora mesmo :D"; */
 }
 
 #welcome-message p {
@@ -64,7 +64,7 @@ body {
   }
 
   #welcome-message h1::after {
-    content: "Crie novos hábitos :D";
+    /* content: "Crie novos hábitos :D"; */
     font-size: 25px;
   }
 

@@ -184,7 +184,7 @@
 }
 
 #new-habit-form .submit-button::before {
-  content: "Confirmar alterações";
+  /* content: "Confirmar alterações"; */
 }
 
 #new-habit-form .submit-button:hover {
@@ -209,7 +209,7 @@
 }
 
 #new-habit-form .cancel-button::before {
-  content: "Cancelar";
+  /* content: "Cancelar"; */
 }
 
 #new-habit-form .cancel-button:hover {
@@ -245,6 +245,6 @@
   }
 
   #new-habit-form .buttons button::before {
-    content: "";
+    /* content: ""; */
   }
 }
