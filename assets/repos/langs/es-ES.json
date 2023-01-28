@@ -1,0 +1,15 @@
+{
+  "today": "Hola, hoy es {{child}}",
+  "addHabit": "{{child}} Añadir nuevo hábito",
+  "welcome": {
+    "h1": "Crea nuevos hábitos :D",
+    "p": "¡Haz clic en el botón crear hábito y comienza a crear buenos hábitos en tu 2023!"
+  },
+  "chooseHabitIcon": "Elige un icono",
+  "chooseHabitName": {
+    "label": "Nombre del hábito",
+    "input": "Camine durante 30 min."
+  },
+  "submitButton": "{{child}} Ahorrar",
+  "cancelButton": "{{child}} Cancelar"
+}

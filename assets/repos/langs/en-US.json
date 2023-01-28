@@ -1,0 +1,15 @@
+{
+  "today": "Hi, today is {{child}}",
+  "addHabit": "{{child}} Add new habit",
+  "welcome": {
+    "h1": "Create new habits :D",
+    "p": "Click the create habit button and start creating good habits in your 2023!"
+  },
+  "chooseHabitIcon": "Choose an icon",
+  "chooseHabitName": {
+    "label": "Habit name",
+    "input": "Walk for 30 min."
+  },
+  "submitButton": "{{child}} Save",
+  "cancelButton": "{{child}} Cancel"
+}
