@@ -12,15 +12,42 @@ header .logo {
   height: 82px;
 }
 
-header #today {
+header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 30px;
+}
+
+header div #today {
   font-size: 36px;
   font-weight: 700;
   font-family: "Inter", sans-serif;
 }
 
-header #today span {
+header div #today span {
   color: var(--orange);
   font-weight: 800;
+}
+
+header div #change-language {
+  width: 46px;
+  height: 46px;
+
+  font-size: 24px;
+
+  border-radius: 50%;
+
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  background-color: transparent;
+
+  transition: all 200ms ease-in;
+}
+
+header div #change-language:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 700px) {
@@ -30,7 +57,14 @@ header #today span {
     gap: 20px;
   }
 
-  header #today {
+  header div #today {
     font-size: 26px;
+  }
+
+  header div #change-language {
+    width: 38px;
+    height: 38px;
+
+    font-size: 20px;
   }
 }

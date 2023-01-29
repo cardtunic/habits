@@ -45,6 +45,7 @@
     />
 
     <link rel="stylesheet" href="./styles/add-new-habit-button.css" />
+    <link rel="stylesheet" href="./styles/choose-language-form.css" />
     <link rel="stylesheet" href="./styles/new-habit-form.css" />
     <link rel="stylesheet" href="./styles/habits-form.css" />
     <link rel="stylesheet" href="./styles/header.css" />
@@ -64,7 +65,12 @@
         alt="Logomarca da plataforma habits"
         class="logo"
       />
-      <p id="today" data-translate-key="today"><span>--/--</span></p>
+      <div>
+        <p id="today" data-translate-key="today"><span>--/--</span></p>
+        <button id="change-language" class="material-symbols-outlined">
+          translate
+        </button>
+      </div>
     </header>
 
     <button id="add-new-habit" data-translate-key="addHabit">
@@ -73,6 +79,20 @@
         alt="Ícone do sinal de adição"
       />
     </button>
+
+    <form id="choose-language">
+      <h2 data-translate-key="chooseLanguage"></h2>
+
+      <div class="languages"></div>
+
+      <button
+        type="button"
+        class="cancel-button"
+        data-translate-key="cancelButton"
+      >
+        <span class="material-symbols-outlined">cancel</span>
+      </button>
+    </form>
 
     <form id="new-habit-form">
       <div class="habit-info-view">
@@ -132,14 +152,15 @@
       <div id="calendar"></div>
     </form>
 
-    <script src="./js/addNewHabitForm.js"></script>
-    <script src="./js/addNewHabitButton.js"></script>
-
     <script src="./js/habitsForm/habitsRepository.js"></script>
     <script src="./js/habitsForm/habitsCalendar.js"></script>
     <script src="./js/habitsForm/habitsDOM.js"></script>
 
     <script src="./js/multilingualSupport/multilingualSupportDOM.js"></script>
     <script src="./js/multilingualSupport/multilingualSupportRepository.js"></script>
+
+    <script src="./js/addNewHabitForm.js"></script>
+    <script src="./js/addNewHabitButton.js"></script>
+    <script src="./js/chooseLanguageForm.js"></script>
   </body>
 </html>

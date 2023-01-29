@@ -1,6 +1,6 @@
 {
   "today": "Hi, today is {{child}}",
-  "addHabit": "{{child}} Add new habit",
+  "addHabit": "{{child}} New habit",
   "welcome": {
     "h1": "Create new habits :D",
     "p": "Click the create habit button and start creating good habits in your 2023!"
@@ -10,6 +10,11 @@
     "label": "Habit name",
     "input": "Walk for 30 min."
   },
-  "submitButton": "{{child}} Save",
-  "cancelButton": "{{child}} Cancel"
+  "submitButton": "{{child}} To save",
+  "cancelButton": "{{child}} Cancel",
+  "chooseLanguage": "Choose a language",
+  "language-pt-br": "Brazilian Portuguese (PT-BR)",
+  "language-pt-pt": "Portuguese (PT-PT)",
+  "language-es-es": "Spanish (ES-ES)",
+  "language-en-us": "English (EN-US)"
 }

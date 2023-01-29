@@ -170,50 +170,14 @@
 
 #new-habit-form .submit-button {
   width: 60%;
-  height: 45px;
-  gap: 10px;
-
-  font-size: 16px;
-  font-weight: 700;
-
-  border-radius: 30px;
-
-  background-color: var(--orange);
-
-  transition: all 100ms ease-in;
 }
 
 #new-habit-form .submit-button::before {
   /* content: "Confirmar alterações"; */
 }
 
-#new-habit-form .submit-button:hover {
-  opacity: 0.7;
-}
-
 #new-habit-form .cancel-button {
   width: 40%;
-  height: 45px;
-  gap: 10px;
-
-  font-size: 16px;
-  font-weight: 700;
-
-  border-radius: 30px;
-  color: var(--orange);
-
-  border: 2px solid var(--orange);
-  background-color: transparent;
-
-  transition: all 100ms ease-in;
-}
-
-#new-habit-form .cancel-button::before {
-  /* content: "Cancelar"; */
-}
-
-#new-habit-form .cancel-button:hover {
-  opacity: 0.7;
 }
 
 @media (max-width: 700px) {
