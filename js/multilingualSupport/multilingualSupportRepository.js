@@ -8,7 +8,9 @@ function setUserLanguagePreference(languageTag) {
 
 async function getAvailableLanguages() {
   const availabeLangs = await (
-    await fetch("../../assets/repos/langs/availableLangs.json")
+    await fetch(
+      "https://raw.githubusercontent.com/cardtunic/habits/add-multilingual-support/assets/repos/langs/availableLangs.json"
+    )
   ).json();
 
   return availabeLangs;
@@ -49,7 +51,9 @@ async function getLanguage() {
   const userLanguageTag = await getUserLanguageTag();
 
   const language = await (
-    await fetch(`../../assets/repos/langs/${userLanguageTag}.json`)
+    await fetch(
+      `https://raw.githubusercontent.com/cardtunic/habits/add-multilingual-support/assets/repos/langs/${userLanguageTag}.json`
+    )
   ).json();
 
   return language;
