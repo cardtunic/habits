@@ -45,10 +45,11 @@ _<p>Esse site foi criado durante a NLW-Setup, em uma semana. A ideia e inspiraç
 
 <h2 id="features">✨ Features</h2>
 
-- Criar novos hábitos, com ícone e nomes personalizados
+- Criar e manipular novos hábitos, com ícone e nomes personalizados
 - Marcar hábitos que foram completos no dia
 - Exibir hábitos ao dia atual correspondente
 - Exibir histórico de hábitos
+- Aplicação disponível em: pt-BR, pt-PT, en-US, de-DE, es-ES e it-IT
 
 ---
 
@@ -56,10 +57,10 @@ _<p>Esse site foi criado durante a NLW-Setup, em uma semana. A ideia e inspiraç
 
 - [x] Refatorar partes do código
 - [x] Adicionar a possibilidade de excluir hábitos
+- [x] Adicionar suporte a múltiplas linguagens
+- [ ] Concertar incongruências no layout
 - [ ] Separar histórico de hábitos por meses
 - [ ] Adicionar barra de pesquisa para ícones
-- [ ] Concertar incongruências no layout
-- [ ] Adicionar nova linguagem: en-US
 - [ ] Sincronizar hábitos entre dispositivos
 
 ---
