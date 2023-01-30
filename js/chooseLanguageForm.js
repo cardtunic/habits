@@ -50,6 +50,7 @@ function chooseLanguage(languageTag) {
 async function renderAvailableLanguages() {
   const userLanguageTag = await getUserLanguageTag(); // retorna a tag da linguagem do usuário
   const availableLangs = await getAvailableLanguages();
+  const language = await getLanguage();
 
   // passa por cada linguaegm disponível, e cria um elemento dentro do formulário relativo a ela
 
@@ -58,11 +59,14 @@ async function renderAvailableLanguages() {
 
     chooseLanguageFormAvailableLanguages.insertAdjacentHTML(
       "beforeend",
-      `<div
-            data-translate-key="language-${lang.toLowerCase()}"
-            class="language ${isSelected ? "selected" : ""}"
-            onclick=chooseLanguage("${lang}")    
-        ></div>`
+      `
+      <div
+        class="language ${isSelected ? "selected" : ""}"
+        onclick=chooseLanguage("${lang}")    
+      >
+      ${language[`language-${lang.toLowerCase()}`]}
+      </div>
+      `
     );
   });
 }
