@@ -1,13 +1,13 @@
 {
-  "today": "Hola, hoy es {{child}}",
-  "addHabit": "{{child}} Nuevo hábito",
+  "today": "hola hoy es {{child}}",
+  "addHabit": "{{child}} nuevo hábito",
   "welcome": {
     "h1": "Crea nuevos hábitos :D",
     "p": "¡Haz clic en el botón crear hábito y comienza a crear buenos hábitos en tu 2023!"
   },
   "chooseHabitIcon": "Elige un icono",
   "chooseHabitName": {
-    "label": "Nombre del hábito",
+    "label": "nombre del hábito",
     "input": "Camine durante 30 min."
   },
   "submitButton": "{{child}} Ahorrar",
@@ -16,5 +16,7 @@
   "language-pt-br": "Portugués brasileño (PT-BR)",
   "language-pt-pt": "Portugués (PT-PT)",
   "language-es-es": "Español (ES-ES)",
-  "language-en-us": "Inglés (EN-US)"
+  "language-en-us": "Inglés (EN-EE. UU.)",
+  "language-de-de": "Alemán (DE-DE)",
+  "language-it-it": "italiano (IT-IT)"
 }

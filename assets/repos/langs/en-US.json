@@ -1,13 +1,13 @@
 {
   "today": "Hi, today is {{child}}",
-  "addHabit": "{{child}} New habit",
+  "addHabit": "{{child}} new habit",
   "welcome": {
     "h1": "Create new habits :D",
     "p": "Click the create habit button and start creating good habits in your 2023!"
   },
-  "chooseHabitIcon": "Choose an icon",
+  "chooseHabitIcon": "choose an icon",
   "chooseHabitName": {
-    "label": "Habit name",
+    "label": "habit name",
     "input": "Walk for 30 min."
   },
   "submitButton": "{{child}} To save",
@@ -16,5 +16,7 @@
   "language-pt-br": "Brazilian Portuguese (PT-BR)",
   "language-pt-pt": "Portuguese (PT-PT)",
   "language-es-es": "Spanish (ES-ES)",
-  "language-en-us": "English (EN-US)"
+  "language-en-us": "English (EN-US)",
+  "language-de-de": "German (DE-DE)",
+  "language-it-it": "Italian (IT-IT)"
 }
