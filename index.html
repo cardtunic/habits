@@ -1,166 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon"
-    />
-    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./assets/images/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+	<head>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/images/favicon/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/images/favicon" />
+		<link
+			rel="manifest"
+			href="./assets/images/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./assets/images/favicon/safari-pinned-tab.svg"
+			color="#5bbad5" />
+		<meta
+			name="msapplication-TileColor"
+			content="#da532c" />
+		<meta
+			name="theme-color"
+			content="#ffffff" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
-      rel="stylesheet"
-    />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+			rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="stylesheet" href="./styles/add-new-habit-button.css" />
-    <link rel="stylesheet" href="./styles/choose-language-form.css" />
-    <link rel="stylesheet" href="./styles/new-habit-form.css" />
-    <link rel="stylesheet" href="./styles/habits-form.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/add-new-habit-button.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/choose-language-form.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/new-habit-form.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/habits-form.css" />
+		<link
+			rel="stylesheet"
+			href="./styles/header.css" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
 
-    <title>habits.</title>
-  </head>
+		<title>habits.</title>
+	</head>
 
-  <body>
-    <header>
-      <img
-        src="./assets/images/logo.svg"
-        alt="Logomarca da plataforma habits"
-        class="logo"
-      />
-      <div>
-        <p id="today" data-translate-key="today"><span>--/--</span></p>
-        <button id="change-language" class="material-symbols-outlined">
-          translate
-        </button>
-      </div>
-    </header>
+	<body>
+		<header>
+			<img
+				src="./assets/images/logo.svg"
+				alt="Logomarca da plataforma habits"
+				class="logo" />
+			<div>
+				<p
+					id="today"
+					data-translate-key="today">
+					<span>--/--</span>
+				</p>
+				<button
+					id="change-language"
+					class="material-symbols-outlined">
+					translate
+				</button>
+			</div>
+		</header>
 
-    <button id="add-new-habit" data-translate-key="addHabit">
-      <img
-        src="./assets/images/icons/plus.svg"
-        alt="Ícone do sinal de adição"
-      />
-    </button>
+		<button
+			id="add-new-habit"
+			data-translate-key="addHabit">
+			<img
+				src="./assets/images/icons/plus.svg"
+				alt="Ícone do sinal de adição" />
+		</button>
 
-    <form id="choose-language">
-      <h2 data-translate-key="chooseLanguage"></h2>
+		<form id="choose-language">
+			<h2 data-translate-key="chooseLanguage"></h2>
 
-      <div class="languages"></div>
+			<div class="languages"></div>
 
-      <button
-        type="button"
-        class="cancel-button"
-        data-translate-key="cancelButton"
-      >
-        <span class="material-symbols-outlined">cancel</span>
-      </button>
-    </form>
+			<button
+				type="button"
+				class="cancel-button"
+				data-translate-key="cancelButton">
+				<span class="material-symbols-outlined">cancel</span>
+			</button>
+		</form>
 
-    <form id="new-habit-form">
-      <div class="habit-info-view">
-        <div class="habit-icon">
-          <label for="" data-translate-key="chooseHabitIcon"></label>
-          <button type="button" id="habit-icon-selector">
-            <span class="material-symbols-outlined">library_add</span>
-          </button>
-        </div>
+		<form id="new-habit-form">
+			<div class="info-view">
+				<div class="habit-icon">
+					<label
+						for=""
+						data-translate-key="chooseHabitIcon"></label>
+					<button
+						type="button"
+						id="habit-icon-selector">
+						<span class="icon material-symbols-outlined"
+							>library_add</span
+						>
+					</button>
+				</div>
 
-        <div class="habit-name" data-translate-key="chooseHabitName">
-          <label for="habit-name-input"></label>
-          <input
-            type="text"
-            name="habit-name-input"
-            id="habit-name-input"
-            placeholder=""
-          />
-        </div>
-      </div>
+				<div
+					class="habit-name"
+					data-translate-key="chooseHabitName">
+					<label for="habit-name-input"></label>
+					<input
+						type="text"
+						name="habit-name-input"
+						id="habit-name-input"
+						placeholder="" />
+				</div>
+			</div>
 
-      <div class="habit-icon-view">
-        <div class="header">
-          <p data-translate-key="chooseHabitIcon"></p>
-          <!-- <input type="text" name="habit-name" placeholder="correndo" /> -->
-        </div>
+			<div class="icons-view">
+				<div class="header">
+					<p data-translate-key="chooseHabitIcon"></p>
+					<!-- <input type="text" name="habit-name" placeholder="correndo" /> -->
+				</div>
 
-        <div class="icons-list"></div>
-      </div>
+				<div class="icons-list"></div>
+			</div>
 
-      <div class="buttons">
-        <button
-          type="button"
-          class="submit-button"
-          data-translate-key="submitButton"
-        >
-          <span class="material-symbols-outlined">check_circle</span>
-        </button>
+			<div class="buttons">
+				<button
+					type="button"
+					class="submit-button"
+					data-translate-key="submitButton">
+					<span class="material-symbols-outlined">check_circle</span>
+				</button>
 
-        <button
-          type="button"
-          class="cancel-button"
-          data-translate-key="cancelButton"
-        >
-          <span class="material-symbols-outlined">cancel</span>
-        </button>
-      </div>
-    </form>
+				<button
+					type="button"
+					class="cancel-button"
+					data-translate-key="cancelButton">
+					<span class="material-symbols-outlined">cancel</span>
+				</button>
+			</div>
+		</form>
 
-    <div id="welcome-message" data-translate-key="welcome">
-      <h1></h1>
-      <p></p>
-    </div>
+		<div
+			id="welcome-message"
+			data-translate-key="welcome">
+			<h1></h1>
+			<p></p>
+		</div>
 
-    <form id="habits-form">
-      <div id="habits"></div>
-      <div id="calendar"></div>
-    </form>
+		<form id="habits-form">
+			<div id="habits"></div>
+			<div id="calendar"></div>
+		</form>
 
-    <script src="./js/habitsForm/habitsRepository.js"></script>
-    <script src="./js/habitsForm/habitsCalendar.js"></script>
-    <script src="./js/habitsForm/habitsDOM.js"></script>
+		<script
+			type="module"
+			src="./js/newHabitForm.js"></script>
 
-    <script src="./js/multilingualSupport/multilingualSupportDOM.js"></script>
-    <script src="./js/multilingualSupport/multilingualSupportRepository.js"></script>
+		<script
+			type="module"
+			src="./js/index.js"></script>
 
-    <script src="./js/addNewHabitForm.js"></script>
-    <script src="./js/addNewHabitButton.js"></script>
-    <script src="./js/chooseLanguageForm.js"></script>
-  </body>
+		<script
+			type="module"
+			src="./js/newHabitButton.js"></script>
+
+		<script src="./js/habitsForm/habitsRepository.js"></script>
+		<script src="./js/habitsForm/habitsCalendar.js"></script>
+		<script src="./js/habitsForm/habitsDOM.js"></script>
+
+		<script src="./js/multilingualSupport/multilingualSupportDOM.js"></script>
+		<script src="./js/multilingualSupport/multilingualSupportRepository.js"></script>
+
+		<script src="./js/chooseLanguageForm.js"></script>
+	</body>
 </html>

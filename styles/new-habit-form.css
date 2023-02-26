@@ -1,214 +1,214 @@
 /* estilos padrão do formulário */
 
 #new-habit-form {
-  position: absolute;
-  width: 760px;
-  padding: 40px 70px;
-  gap: 30px;
+	position: absolute;
+	width: 760px;
+	padding: 40px 70px;
+	gap: 30px;
 
-  top: 50%;
-  transform: translateY(-50%);
+	top: 50%;
+	transform: translateY(-50%);
 
-  z-index: 3;
+	z-index: 3;
 
-  display: none;
-  flex-direction: column;
-  border-radius: 36px;
-  justify-content: center;
-  align-items: center;
+	display: none;
+	flex-direction: column;
+	border-radius: 36px;
+	justify-content: center;
+	align-items: center;
 
-  color: var(--white);
-  background-color: var(--gray);
+	color: var(--white);
+	background-color: var(--gray);
 }
 
 /* preenchimento de informações básicas */
 
-#new-habit-form .habit-info-view {
-  width: 100%;
+#new-habit-form .info-view {
+	width: 100%;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 
-  gap: 50px;
+	gap: 50px;
 }
 
-#new-habit-form .habit-info-view .habit-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#new-habit-form .info-view .habit-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  gap: 15px;
+	gap: 15px;
 
-  height: 120px;
+	height: 120px;
 }
 
-#new-habit-form .habit-info-view .habit-icon label {
-  font-size: 21px;
-  font-weight: 500;
+#new-habit-form .info-view .habit-icon label {
+	font-size: 21px;
+	font-weight: 500;
 }
 
-#new-habit-form .habit-info-view .habit-icon button {
-  width: 80px;
-  height: 80px;
+#new-habit-form .info-view .habit-icon button {
+	width: 80px;
+	height: 80px;
 
-  border: 2px solid #ff7b31;
-  border-radius: 16px;
+	border: 2px solid #ff7b31;
+	border-radius: 16px;
 
-  background-color: transparent;
+	background-color: transparent;
 }
 
-#new-habit-form .habit-info-view .habit-icon button span {
-  color: white;
-  font-size: 48px;
+#new-habit-form .info-view .habit-icon button .icon {
+	color: white;
+	font-size: 48px;
 }
 
-#new-habit-form .habit-info-view .habit-name {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+#new-habit-form .info-view .habit-name {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 
-  gap: 15px;
+	gap: 15px;
 }
 
-#new-habit-form .habit-info-view .habit-name label {
-  font-size: 21px;
-  font-weight: 500;
+#new-habit-form .info-view .habit-name label {
+	font-size: 21px;
+	font-weight: 500;
 }
 
-#new-habit-form .habit-info-view .habit-name input {
-  width: 350px;
-  padding: 10px;
+#new-habit-form .info-view .habit-name input {
+	width: 350px;
+	padding: 10px;
 
-  color: var(--white);
-  border: 2px solid #ff7b31;
-  border-radius: 15px;
+	color: var(--white);
+	border: 2px solid #ff7b31;
+	border-radius: 15px;
 
-  background-color: transparent;
+	background-color: transparent;
 }
 
 /* seleção de ícone do formulário */
 
-#new-habit-form .habit-icon-view {
-  width: 100%;
+#new-habit-form .icons-view {
+	width: 100%;
 
-  display: none;
-  flex-direction: column;
+	display: none;
+	flex-direction: column;
 
-  gap: 30px;
+	gap: 30px;
 }
 
-#new-habit-form .habit-icon-view .header {
-  height: 40px;
+#new-habit-form .icons-view .header {
+	height: 40px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-#new-habit-form .habit-icon-view .header p {
-  font-size: 21px;
-  font-weight: 500;
+#new-habit-form .icons-view .header p {
+	font-size: 21px;
+	font-weight: 500;
 }
 
-#new-habit-form .habit-icon-view .header input {
-  width: 250px;
-  height: 100%;
+#new-habit-form .icons-view .header input {
+	width: 250px;
+	height: 100%;
 
-  padding: 5px 45px;
+	padding: 5px 45px;
 
-  color: white;
-  border: 2px solid #ff7b31;
-  border-radius: 100px;
+	color: white;
+	border: 2px solid #ff7b31;
+	border-radius: 100px;
 
-  background: url("../assets/images/icons/magnify.svg") no-repeat left;
-  background-position: 16px;
-  background-size: 18px;
+	background: url("../assets/images/icons/magnify.svg") no-repeat left;
+	background-position: 16px;
+	background-size: 18px;
 }
 
-#new-habit-form .habit-icon-view .icons-list {
-  height: 170px;
-  overflow-y: scroll;
+#new-habit-form .icons-view .icons-list {
+	height: 170px;
+	overflow-y: scroll;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
-#new-habit-form .habit-icon-view .icons-list span {
-  width: 48px;
-  height: 48px;
+#new-habit-form .icons-view .icons-list .icon {
+	width: 48px;
+	height: 48px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  font-size: 48px;
+	font-size: 48px;
 
-  cursor: pointer;
+	cursor: pointer;
 
-  transition: all 100ms ease-out;
+	transition: all 100ms ease-out;
 }
 
-#new-habit-form .habit-icon-view .icons-list span:hover {
-  transform: scale(1.2);
-  opacity: 0.7;
+#new-habit-form .icons-view .icons-list .icon:hover {
+	transform: scale(1.2);
+	opacity: 0.7;
 }
 
 /* botões do formulário */
 
 #new-habit-form .buttons {
-  width: 100%;
+	width: 100%;
 
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
 }
 
 #new-habit-form .submit-button {
-  width: 60%;
+	width: 60%;
 }
 
 #new-habit-form .submit-button::before {
-  /* content: "Confirmar alterações"; */
+	/* content: "Confirmar alterações"; */
 }
 
 #new-habit-form .cancel-button {
-  width: 40%;
+	width: 40%;
 }
 
 @media (max-width: 700px) {
-  #new-habit-form {
-    width: 90vw;
-    padding: 30px;
-  }
+	#new-habit-form {
+		width: 90vw;
+		padding: 30px;
+	}
 
-  #new-habit-form .habit-info-view {
-    flex-direction: column;
-  }
+	#new-habit-form .info-view {
+		flex-direction: column;
+	}
 
-  #new-habit-form .habit-info-view .habit-name {
-    width: 100%;
-  }
+	#new-habit-form .info-view .habit-name {
+		width: 100%;
+	}
 
-  #new-habit-form .habit-info-view .habit-name input {
-    width: 100%;
-  }
+	#new-habit-form .info-view .habit-name input {
+		width: 100%;
+	}
 
-  #new-habit-form .buttons {
-    justify-content: center;
-    gap: 15px;
-  }
+	#new-habit-form .buttons {
+		justify-content: center;
+		gap: 15px;
+	}
 
-  #new-habit-form .buttons button {
-    gap: 0px;
-    width: 50%;
-  }
+	#new-habit-form .buttons button {
+		gap: 0px;
+		width: 50%;
+	}
 
-  #new-habit-form .buttons button::before {
-    /* content: ""; */
-  }
+	#new-habit-form .buttons button::before {
+		/* content: ""; */
+	}
 }

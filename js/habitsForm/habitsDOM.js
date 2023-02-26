@@ -8,7 +8,6 @@ function removeHabitHandler(element) {
   );
 
   removeHabit(habitId);
-  renderLayout();
 }
 
 // lida com cliques em checkboxes dentro do calendário
