@@ -4,15 +4,18 @@ class NewHabitForm {
 
 		this.element = document.querySelector("#new-habit-form");
 
-		this.currentVisibility = "invisible";
-		this.currentView = "info";
-
+		
 		this.habitIconBtn = this.element.querySelector(
 			".info-view .habit-icon button"
 		);
 
 		this.submitBtn = this.element.querySelector(".buttons .submit-button");
 		this.cancelBtn = this.element.querySelector(".buttons .cancel-button");
+		
+		// set some configs
+
+		this.currentVisibility = "invisible";
+		this.currentView = "info";
 
 		// set listeners for some elements
 
@@ -121,17 +124,17 @@ class NewHabitForm {
 	// submit the new habit created by user
 
 	submitNewHabit() {
-		const habitIcon = this.habitIconBtn.querySelector("span").innerText;
-		const habitName = this.element.querySelector("#habit-name-input").value;
+		const selectedHabitIcon = this.habitIconBtn.querySelector("span").innerText;
+		const habitNameInput = this.element.querySelector("#habit-name-input").value;
 
-		if (habitName.length === 0) {
+		if (habitNameInput.length === 0) {
 			alert("⚠️ Escolha um nome para o seu novo hábito.");
 			return;
 		}
 
 		addHabit({
-			icon: habitIcon,
-			name: habitName,
+			icon: selectedHabitIcon,
+			name: habitNameInput,
 		});
 
 		this.toggleVisibility();

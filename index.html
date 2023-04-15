@@ -91,7 +91,7 @@
 					<span>--/--</span>
 				</p>
 				<button
-					id="change-language"
+					id="open-lang-selector-form"
 					class="material-symbols-outlined">
 					translate
 				</button>
@@ -106,7 +106,7 @@
 				alt="Ícone do sinal de adição" />
 		</button>
 
-		<form id="choose-language">
+		<form id="select-lang-form">
 			<h2 data-translate-key="chooseLanguage"></h2>
 
 			<div class="languages"></div>
@@ -190,6 +190,10 @@
 
 		<script
 			type="module"
+			src="./js/selectLangForm.js"></script>
+
+		<script
+			type="module"
 			src="./js/index.js"></script>
 
 		<script
@@ -203,6 +207,12 @@
 		<script src="./js/multilingualSupport/multilingualSupportDOM.js"></script>
 		<script src="./js/multilingualSupport/multilingualSupportRepository.js"></script>
 
-		<script src="./js/chooseLanguageForm.js"></script>
+		<script type="module">
+			import { selectLangForm } from "./js/index.js"
+
+			const openLangSelector = document.querySelector("#open-lang-selector-form")
+
+			openLangSelector.addEventListener("click", () => {selectLangForm.toggleVisibility()})
+		</script>
 	</body>
 </html>

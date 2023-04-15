@@ -1,52 +1,56 @@
 document.addEventListener("DOMContentLoaded", () => {
-  addLangaugeText();
+	addLangaugeText();
 });
 
 // adiciona o texto dos elementos HTML da página, de acordo com a linguagem atual
 
 async function addLangaugeText() {
-  const currentLangauge = await getLanguage(); // retorna a linguagem atual
-  const elementsToAddText = document.querySelectorAll("[data-translate-key]"); // retorna os elementos que terão texto adicionado
+	const availableLangs = await getAvailableLangs();
 
-  // passa por todos os elementos e adiciona o texto relativo ao data-translate-key
+	const currentLangauge = availableLangs.filter(lang => lang.selected === true)[0]; // retorna a linguagem atual
+	const elementsToAddText = document.querySelectorAll("[data-translate-key]"); // retorna os elementos que terão texto adicionado
 
-  elementsToAddText.forEach((element) => {
-    const translateKey = element.getAttribute("data-translate-key");
+	// passa por todos os elementos e adiciona o texto relativo ao data-translate-key
 
-    // dispara se o elemento estiver dentro de outro objeto
+	elementsToAddText.forEach(element => {
+		const translateKey = element.getAttribute("data-translate-key");
 
-    if (typeof currentLangauge[translateKey] === "object") {
-      const parentObjetct = currentLangauge[translateKey];
+		// dispara se o elemento estiver dentro de outro objeto
 
-      // passa por cada "key" do objeto pai, e adiciona o texto relativo ao elemento
+		if (typeof currentLangauge[translateKey] === "object") {
+			const parentObjetct = currentLangauge[translateKey];
 
-      Object.keys(parentObjetct).forEach((key) => {
-        const elementText = parentObjetct[key]; // retorna o texto relativo ao elemento
+			// passa por cada "key" do objeto pai, e adiciona o texto relativo ao elemento
 
-        // dispara se o elemento for um input, mudando seu placeholder
+			Object.keys(parentObjetct).forEach(key => {
+				const elementText = parentObjetct[key]; // retorna o texto relativo ao elemento
 
-        if (key === "input") {
-          element.querySelector(key).setAttribute("placeholder", elementText);
+				// dispara se o elemento for um input, mudando seu placeholder
 
-          return;
-        }
+				if (key === "input") {
+					element
+						.querySelector(key)
+						.setAttribute("placeholder", elementText);
 
-        const elementChildren = element.querySelector(key).innerHTML; // retorna o HTML interno, com os filhos do elemento
+					return;
+				}
 
-        // adiciona o texto, mas sem alterar o HTML interno anterior
+				const elementChildren = element.querySelector(key).innerHTML; // retorna o HTML interno, com os filhos do elemento
 
-        element.querySelector(key).innerHTML = elementText.replace(
-          "{{child}}",
-          elementChildren
-        );
-      });
+				// adiciona o texto, mas sem alterar o HTML interno anterior
 
-      return;
-    }
+				element.querySelector(key).innerHTML = elementText.replace(
+					"{{child}}",
+					elementChildren
+				);
+			});
 
-    const elementText = currentLangauge[translateKey]; // retorna o texto relativo ao elemento
-    const elementChildren = element.innerHTML; // retorna o HTML interno, com os filhos do elemento
+			return;
+		}
 
-    element.innerHTML = elementText.replace("{{child}}", element.innerHTML); // adiciona o texto, mas sem alterar o HTML interno anterior
-  });
+		const elementText = currentLangauge[translateKey]; // retorna o texto relativo ao elemento
+		const elementChildren = element.innerHTML; // retorna o HTML interno, com os filhos do elemento
+
+		element.innerHTML = elementText.replace("{{child}}", element.innerHTML); // adiciona o texto, mas sem alterar o HTML interno anterior
+	});
 }

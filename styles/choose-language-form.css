@@ -1,54 +1,54 @@
-#choose-language {
-  position: absolute;
+#select-lang-form {
+	position: absolute;
 
-  z-index: 4;
+	z-index: 4;
 
-  top: 50%;
-  transform: translateY(-50%);
+	top: 50%;
+	transform: translateY(-50%);
 
-  display: none;
-  flex-direction: column;
-  align-items: center;
+	display: none;
+	flex-direction: column;
+	align-items: center;
 
-  gap: 30px;
+	gap: 30px;
 
-  padding: 50px;
+	padding: 50px;
 
-  border-radius: 30px;
+	border-radius: 30px;
 
-  color: var(--white);
-  background-color: var(--gray);
+	color: var(--white);
+	background-color: var(--gray);
 }
 
-#choose-language h2 {
-  font-weight: 700;
-  font-size: 25px;
+#select-lang-form h2 {
+	font-weight: 700;
+	font-size: 25px;
 }
 
-#choose-language div {
-  display: flex;
-  flex-direction: column;
+#select-lang-form div {
+	display: flex;
+	flex-direction: column;
 
-  gap: 15px;
+	gap: 15px;
 }
 
-#choose-language div .language {
-  cursor: pointer;
-  font-size: 21px;
+#select-lang-form div .language {
+	cursor: pointer;
+	font-size: 21px;
 
-  transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
 }
 
-#choose-language div .language:hover {
-  opacity: 0.7;
+#select-lang-form div .language:hover {
+	opacity: 0.7;
 }
 
-#choose-language div .selected {
-  color: var(--orange);
+#select-lang-form div .selected {
+	color: var(--orange);
 }
 
 @media (max-width: 700px) {
-  #choose-language div .language {
-    font-size: 18px;
-  }
+	#select-lang-form div .language {
+		font-size: 18px;
+	}
 }

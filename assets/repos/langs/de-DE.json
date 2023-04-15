@@ -1,22 +1,22 @@
 {
-    "today": "Hallo, heute ist {{child}}",
-    "addHabit": "{{child}} neue Gewohnheit",
-    "welcome": {
-      "h1": "Schaffe neue Gewohnheiten :D",
-      "p": "Klicken Sie auf die Schaltfläche „Gewohnheit erstellen“ und beginnen Sie, in Ihrem Jahr 2023 gute Gewohnheiten zu entwickeln!"
-    },
-    "chooseHabitIcon": "Wählen Sie ein Symbol aus",
-    "chooseHabitName": {
-      "label": "Gewohnheitsname",
-      "input": "Gehen Sie 30 Minuten lang."
-    },
-    "submitButton": "{{child}} Speichern",
-    "cancelButton": "{{child}} Absagen",
-    "chooseLanguage": "Wählen Sie eine Sprache",
-    "language-pt-br": "Brasilianisches Portugiesisch (PT-BR)",
-    "language-pt-pt": "Portugiesisch (PT-PT)",
-    "language-es-es": "Spanisch (ES-ES)",
-    "language-en-us": "Englisch (EN-US)",
-    "language-de-de": "Deutsch (DE-DE)",
-    "language-it-it": "Italienisch (IT-IT)"
-  }
+	"today": "Hallo, heute ist {{child}}",
+	"addHabit": "{{child}} neue Gewohnheit",
+	"welcome": {
+		"h1": "Schaffe neue Gewohnheiten :D",
+		"p": "Klicken Sie auf die Schaltfläche „Gewohnheit erstellen“ und beginnen Sie, in Ihrem Jahr 2023 gute Gewohnheiten zu entwickeln!"
+	},
+	"chooseHabitIcon": "Wählen Sie ein Symbol aus",
+	"chooseHabitName": {
+		"label": "Gewohnheitsname",
+		"input": "Gehen Sie 30 Minuten lang."
+	},
+	"submitButton": "{{child}} Speichern",
+	"cancelButton": "{{child}} Absagen",
+	"chooseLanguage": "Wählen Sie eine Sprache",
+	"language-pt-br": "Brasilianisches Portugiesisch (PT-BR)",
+	"language-pt-pt": "Portugiesisch (PT-PT)",
+	"language-es-es": "Spanisch (ES-ES)",
+	"language-en-us": "Englisch (EN-US)",
+	"language-de-de": "Deutsch (DE-DE)",
+	"language-it-it": "Italienisch (IT-IT)"
+}
